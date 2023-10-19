@@ -21,21 +21,21 @@ export const QuizView = ({
         <div className="quiz_card">
             {edit && (
                 <QuizEdit
-                    quiz={quiz
-                    editQuiz={editQuiz
-                    deleteQuiz={deleteQuiz
-                    switchEdit={switchEdit
-                    resetView={resetView
+                    quiz={quiz}
+                    editQuiz={editQuiz}
+                    deleteQuiz={deleteQuiz}
+                    switchEdit={switchEdit}
+                    resetView={resetView}
                 ></QuizEdit>
-            )
+            )}
             {!edit && (
                 <QuizExpanded
-                    quiz={quiz
-                    editQuiz={editQuiz
-                    resetView={resetView
-                    switchEdit={switchEdit
+                    quiz={quiz}
+                    editQuiz={editQuiz}
+                    resetView={resetView}
+                    switchEdit={switchEdit}
                 ></QuizExpanded>
-            )
+            )}
         </div>
     );
-;
+            }
