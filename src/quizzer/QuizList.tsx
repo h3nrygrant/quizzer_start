@@ -52,6 +52,8 @@ export const QuizList = ({
                             resetView={resetQuizView}
                         ></QuizView>
                     );
+                } else{
+                    return (<div></div>)
                 }
             })}
         </div>

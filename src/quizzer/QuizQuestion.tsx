@@ -25,7 +25,7 @@ export const QuizQuestion = ({
     };
 
     const handleSubmitClick = () => {
-        handleSubmit();
+        handleSubmit(question.id);
         if (question.submission === question.expected) {
             addPoints(5);
         }
@@ -58,7 +58,7 @@ export const QuizQuestion = ({
                             {question.options.map(
                                 (option: string, i: number) => (
                                     <Form.Check
-                                        type=""
+                                        type="radio"
                                         name={"questionChoice" + index}
                                         key={option + " | " + i}
                                         label={option}
