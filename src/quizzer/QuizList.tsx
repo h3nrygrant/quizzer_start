@@ -48,7 +48,7 @@ export const QuizList = ({
                             key={quiz.id}
                             quiz={quiz}
                             editQuiz={editQuiz}
-                            deleteQuiz={deleteQuiz}
+                            deleteQuiz={deleteQuiz} 
                             resetView={resetQuizView}
                         ></QuizView>
                     );
